@@ -1,20 +1,18 @@
-const para = document.querySelector("p");
-const hide = document.querySelector("#hide")
-const show = document.querySelector("#show")
-console.log(para)
+const para = document.querySelector('p');
+const hide =  document.querySelector("#hide");
+const show =  document.querySelector("#show");
 
-loadEventListeners();
 
-function loadEventListeners(){
-    hide.addEventListener('click',hidePara)
-    show.addEventListener('click',showPara)
+function EventListener(){
+    hide.addEventListener('click', tohide);
+    show.addEventListener('click', toshow);
 }
 
-function hidePara(){
-    para.style.display = "none";
+function tohide(){
+    para.style.display = "none"
 }
-function showPara(){
-    para.style.display = "block";
+function toshow(){
+    para.style.display = "block"
 }
 
-hidePara();
+EventListener()
